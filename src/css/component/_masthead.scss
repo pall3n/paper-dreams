@@ -1,0 +1,60 @@
+.Masthead {
+	@include respond-to(520px) {
+		background: url("../img/overview-optimise.jpg") no-repeat center center;
+		background-size: cover;
+
+		padding: $Lead * 2;
+	}
+
+	@include respond-to(740px) {
+		padding: $Lead * 3;
+	}
+
+	@include respond-to(980px) {
+		padding: $Lead * 4;
+	}
+}
+
+.Masthead-splash {
+	background: url("../img/overview-optimise.jpg") no-repeat center center;
+	background-size: cover;
+
+	padding-top: 56.25%;
+	
+	@include respond-to(520px) {
+		background: transparent;
+		padding-top: 0;
+	}
+}
+
+.Masthead-tile {
+	position: relative;
+	max-width: 29rem;
+	margin: 0 auto;
+
+	padding: $Lead * 1.5;
+
+	@include respond-to(520px) {
+		&:before {
+			content: '';
+			position: absolute;
+			top: $Lead;
+			right: $Lead / 2;
+			bottom: $Lead;
+			left: $Lead / 2;
+
+			border: 3px solid rgba($Colour-primary,.9);
+		}
+	}
+
+	@include respond-to(740px) {
+		padding: $Lead * 2;
+
+		&:before {
+			top: $Lead * 1.5;
+			right: $Lead * 1;
+			bottom: $Lead * 1.5;
+			left: $Lead * 1;
+		}
+	}
+}

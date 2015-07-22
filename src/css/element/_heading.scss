@@ -1,0 +1,24 @@
+h2 {
+	position: relative;
+	font-family: $FontFamily-heading;
+	font-weight: 500;
+	@include font-size($FontSize-2);
+	line-height: 1.3;
+
+	margin-top: $Lead * 2;
+	margin-bottom: $Lead;
+	padding-bottom: $Lead * 0.75;
+
+	color: $Colour-primary;
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		width: $Lead * 1.5;
+		height: 2px;
+		background-color: $Colour-primary;
+	}
+}

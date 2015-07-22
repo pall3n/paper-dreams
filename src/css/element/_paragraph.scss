@@ -1,0 +1,13 @@
+p {
+	@include font-size($FontSize-b);
+	line-height: 1.4;
+	font-weight: 400;
+
+	margin-top: $Lead;
+	margin-bottom: 0;
+}
+
+.lead {
+	@include font-size($FontSize-lead);
+	font-weight: 400;
+}

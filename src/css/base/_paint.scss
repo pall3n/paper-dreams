@@ -1,0 +1,16 @@
+.paint-splash {
+	background: url('../img/invite.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+
+.paint,
+%paint {
+	background-color: #F4F3F2;
+	background-color: rgba(#F4F3F2, .8);
+}
+
+.paint-tile,
+%paint-tile {
+	border: 4px solid rgba($Colour-primary, .6);
+}
